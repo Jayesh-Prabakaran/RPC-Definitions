@@ -1,0 +1,9 @@
+name: ListNote
+request:
+  - name: notes
+    type: List
+    elementType: Note
+    defaultValue: EMPTY
+requiresAuthentication: CLIENT_TO_SERVER
+requiresPrivileges: 
+  - SEARCH_USERS

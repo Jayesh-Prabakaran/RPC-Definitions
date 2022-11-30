@@ -1,0 +1,14 @@
+name: Note
+cases:
+  - name: NOTE
+    attributes:
+      - name: id
+        type: UUID
+      - name: title
+        type: string
+      - name: body
+        type: string
+      - name: createdAt
+        type: Timestamp
+      - name: lastModifiedAt
+        type: Timestamp

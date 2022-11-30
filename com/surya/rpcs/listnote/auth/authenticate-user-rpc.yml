@@ -1,0 +1,11 @@
+name: AuthenticateUser
+request:
+  - name: authToken
+    type: String
+response:
+  - name: userIdentity
+    type: UserIdentity
+requiresAuthentication: SERVER_TO_SERVER
+errors:
+  - code: INVALID_AUTHENTICATION_TOKEN
+
