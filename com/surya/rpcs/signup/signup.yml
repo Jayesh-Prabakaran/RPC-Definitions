@@ -1,0 +1,16 @@
+name: SignUp
+request:
+  - name: emailId
+    type: string
+  - name: password
+    type: string
+    validations:
+      minSize: 12
+errors:
+  - code: EMAIL_ID_ALREADY_EXISTS
+    comment: A user with emailId already exists in the database.
+  - code: INSECURE_PASSWORD
+    comment: This password is not secure enough.
+requiresAuthentication: CLIENT_TO_SERVER
+requiresPrivileges: 
+  - CREATE_USERS

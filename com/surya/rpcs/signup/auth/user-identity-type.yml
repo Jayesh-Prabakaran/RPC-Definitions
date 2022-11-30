@@ -1,0 +1,5 @@
+- name: id
+  type: String
+- name: privileges
+  type: List
+  elementType: String
