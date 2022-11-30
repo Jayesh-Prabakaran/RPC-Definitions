@@ -1,0 +1,27 @@
+name: UpdateNote
+request:
+  - name: id
+    type: UUID
+  - name: title
+    type: string
+  - name: body
+    type: string
+response:
+  - name: id
+    type: UUID
+  - name: title
+    type: string
+  - name: body
+    type: string
+  - name: createdAt
+    type: Timestamp
+  - name: lastModifiedAt
+    type: Timestamp
+errors:
+  - code: NOTE_TOO_LARGE	
+    comment: The size of either title or body is too large.
+  - code: NOTE_NOT_FOUND
+    comment: A note with this id does not exist.
+requiresAuthentication: CLIENT_TO_SERVER
+requiresPrivileges: 
+  - UPDATE_USERS
