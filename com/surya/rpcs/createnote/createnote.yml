@@ -1,0 +1,27 @@
+name: CreateNote
+request:
+  - name: id
+    type: UUID
+  - name: title
+    type: string
+  - name: body
+    type: string
+response:
+  - name: id
+    type: UUID
+  - name: title
+    type: string
+  - name: body
+    type: string
+  - name: createdAt
+    type: Timestamp
+  - name: lastModifiedAt
+    type: Timestamp
+errors:
+  - code: NOTE_TOO_LARGE	
+    comment: The size of either title or body is too large.
+  - code: NOTE_ALREADY_EXISTS
+    comment: A note with this id already exists.
+requiresAuthentication: CLIENT_TO_SERVER
+requiresPrivileges: 
+  - CREATE_USERS
