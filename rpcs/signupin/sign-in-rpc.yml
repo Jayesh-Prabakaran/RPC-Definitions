@@ -1,0 +1,10 @@
+name: SignIn
+request:
+  - name: emailId
+    type: String
+  - name: password
+    type: String
+errors:
+  - code: INVALID_CREDENTIALS
+    comment: There is no user with that emailId in the database.
+requiresAuthentication: CLIENT_TO_SERVER

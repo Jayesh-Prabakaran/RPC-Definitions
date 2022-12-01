@@ -1,0 +1,6 @@
+name: ListNote
+request:
+  - name: notes
+    type: List
+    elementType: Note
+requiresAuthentication: CLIENT_TO_SERVER
