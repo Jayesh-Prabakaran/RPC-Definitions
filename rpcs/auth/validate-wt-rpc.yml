@@ -13,4 +13,3 @@ requiresAuthentication: SERVER_TO_SERVER
 errors:
   - code: INVALID_WT
   - code: USER_DISABLED
-  

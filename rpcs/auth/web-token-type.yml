@@ -4,4 +4,3 @@ attributes:
     type: String
   - name: expiresAt
     type: Timestamp
-    
