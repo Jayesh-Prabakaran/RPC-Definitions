@@ -1,0 +1,8 @@
+name: DeleteNote
+request:
+  - name: id
+    type: UUID
+errors:
+  - code: NOTE_NOT_FOUND
+    comment: A note with this id does not exist.
+requiresAuthentication: CLIENT_TO_SERVER
